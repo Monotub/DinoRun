@@ -77,11 +77,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void HandleDuck()
-    {
-        Debug.LogWarning("Duck not implemented");
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (!canDie || isDead) return;
@@ -99,5 +94,11 @@ public class Player : MonoBehaviour
     private void RestartScene()
     {
         SceneManager.LoadScene(0);
+    }
+
+    private void PlayFootSound()
+    {
+        // TODO: Add footstep sounds here
+        // added to test to see if this worked for downloaded model/animations
     }
 }

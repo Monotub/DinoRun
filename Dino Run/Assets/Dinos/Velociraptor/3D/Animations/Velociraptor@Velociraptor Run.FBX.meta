@@ -1,148 +1,422 @@
 fileFormatVersion: 2
 guid: 95688e0a90c52af41b76386e8dbdbdd9
-timeCreated: 1506913664
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: Eye Left
-    100002: Eye Right
-    100004: Eye Shine Left
-    100006: Eye Shine Right
-    100008: Eye Squash Left
-    100010: Eye Squash Right
-    100012: Raptor
-    100014: Raptor Head
-    100016: Raptor Jaw
-    100018: Raptor L Calf
-    100020: Raptor L Clavicle
-    100022: Raptor L Eyebrow
-    100024: Raptor L Finger0
-    100026: Raptor L Finger01
-    100028: Raptor L Finger1
-    100030: Raptor L Finger11
-    100032: Raptor L Foot
-    100034: Raptor L Forearm
-    100036: Raptor L Hand
-    100038: Raptor L Lower Eyelid
-    100040: Raptor L Lower Mouth
-    100042: Raptor L Mouth
-    100044: Raptor L Thigh
-    100046: Raptor L Toe0
-    100048: Raptor L Toe01
-    100050: Raptor L Upper Eyelid
-    100052: Raptor L Upper Mouth
-    100054: Raptor L UpperArm
-    100056: Raptor Neck
-    100058: Raptor Pelvis
-    100060: Raptor R Calf
-    100062: Raptor R Clavicle
-    100064: Raptor R Eyebrow
-    100066: Raptor R Finger0
-    100068: Raptor R Finger01
-    100070: Raptor R Finger1
-    100072: Raptor R Finger11
-    100074: Raptor R Foot
-    100076: Raptor R Forearm
-    100078: Raptor R Hand
-    100080: Raptor R Lower Eyelid
-    100082: Raptor R Lower Mouth
-    100084: Raptor R Mouth
-    100086: Raptor R Thigh
-    100088: Raptor R Toe0
-    100090: Raptor R Toe01
-    100092: Raptor R Upper Eyelid
-    100094: Raptor R Upper Mouth
-    100096: Raptor R UpperArm
-    100098: Raptor Spine
-    100100: Raptor Spine1
-    100102: Raptor Tail
-    100104: Raptor Tail02
-    100106: Raptor Tail03
-    100108: Raptor Tail04
-    100110: Raptor Tail05
-    100112: Raptor Tongue
-    100114: Raptor Tongue02
-    100116: Raptor Tongue03
-    100118: //RootNode
-    100120: Dummy001
-    400000: Eye Left
-    400002: Eye Right
-    400004: Eye Shine Left
-    400006: Eye Shine Right
-    400008: Eye Squash Left
-    400010: Eye Squash Right
-    400012: Raptor
-    400014: Raptor Head
-    400016: Raptor Jaw
-    400018: Raptor L Calf
-    400020: Raptor L Clavicle
-    400022: Raptor L Eyebrow
-    400024: Raptor L Finger0
-    400026: Raptor L Finger01
-    400028: Raptor L Finger1
-    400030: Raptor L Finger11
-    400032: Raptor L Foot
-    400034: Raptor L Forearm
-    400036: Raptor L Hand
-    400038: Raptor L Lower Eyelid
-    400040: Raptor L Lower Mouth
-    400042: Raptor L Mouth
-    400044: Raptor L Thigh
-    400046: Raptor L Toe0
-    400048: Raptor L Toe01
-    400050: Raptor L Upper Eyelid
-    400052: Raptor L Upper Mouth
-    400054: Raptor L UpperArm
-    400056: Raptor Neck
-    400058: Raptor Pelvis
-    400060: Raptor R Calf
-    400062: Raptor R Clavicle
-    400064: Raptor R Eyebrow
-    400066: Raptor R Finger0
-    400068: Raptor R Finger01
-    400070: Raptor R Finger1
-    400072: Raptor R Finger11
-    400074: Raptor R Foot
-    400076: Raptor R Forearm
-    400078: Raptor R Hand
-    400080: Raptor R Lower Eyelid
-    400082: Raptor R Lower Mouth
-    400084: Raptor R Mouth
-    400086: Raptor R Thigh
-    400088: Raptor R Toe0
-    400090: Raptor R Toe01
-    400092: Raptor R Upper Eyelid
-    400094: Raptor R Upper Mouth
-    400096: Raptor R UpperArm
-    400098: Raptor Spine
-    400100: Raptor Spine1
-    400102: Raptor Tail
-    400104: Raptor Tail02
-    400106: Raptor Tail03
-    400108: Raptor Tail04
-    400110: Raptor Tail05
-    400112: Raptor Tongue
-    400114: Raptor Tongue02
-    400116: Raptor Tongue03
-    400118: //RootNode
-    400120: Dummy001
-    2300000: Eye Left
-    2300002: Eye Right
-    2300004: Eye Shine Left
-    2300006: Eye Shine Right
-    3300000: Eye Left
-    3300002: Eye Right
-    3300004: Eye Shine Left
-    3300006: Eye Shine Right
-    4300000: Eye Right
-    4300002: Eye Shine Right
-    4300004: Eye Left
-    4300006: Eye Shine Left
-    7400000: Velociraptor Run
-    7400002: Velociraptor Run Turn Right
-    7400004: Velociraptor Run Turn Left
-    9500000: //RootNode
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Eye Left
+  - first:
+      1: 100002
+    second: Eye Right
+  - first:
+      1: 100004
+    second: Eye Shine Left
+  - first:
+      1: 100006
+    second: Eye Shine Right
+  - first:
+      1: 100008
+    second: Eye Squash Left
+  - first:
+      1: 100010
+    second: Eye Squash Right
+  - first:
+      1: 100012
+    second: Raptor
+  - first:
+      1: 100014
+    second: Raptor Head
+  - first:
+      1: 100016
+    second: Raptor Jaw
+  - first:
+      1: 100018
+    second: Raptor L Calf
+  - first:
+      1: 100020
+    second: Raptor L Clavicle
+  - first:
+      1: 100022
+    second: Raptor L Eyebrow
+  - first:
+      1: 100024
+    second: Raptor L Finger0
+  - first:
+      1: 100026
+    second: Raptor L Finger01
+  - first:
+      1: 100028
+    second: Raptor L Finger1
+  - first:
+      1: 100030
+    second: Raptor L Finger11
+  - first:
+      1: 100032
+    second: Raptor L Foot
+  - first:
+      1: 100034
+    second: Raptor L Forearm
+  - first:
+      1: 100036
+    second: Raptor L Hand
+  - first:
+      1: 100038
+    second: Raptor L Lower Eyelid
+  - first:
+      1: 100040
+    second: Raptor L Lower Mouth
+  - first:
+      1: 100042
+    second: Raptor L Mouth
+  - first:
+      1: 100044
+    second: Raptor L Thigh
+  - first:
+      1: 100046
+    second: Raptor L Toe0
+  - first:
+      1: 100048
+    second: Raptor L Toe01
+  - first:
+      1: 100050
+    second: Raptor L Upper Eyelid
+  - first:
+      1: 100052
+    second: Raptor L Upper Mouth
+  - first:
+      1: 100054
+    second: Raptor L UpperArm
+  - first:
+      1: 100056
+    second: Raptor Neck
+  - first:
+      1: 100058
+    second: Raptor Pelvis
+  - first:
+      1: 100060
+    second: Raptor R Calf
+  - first:
+      1: 100062
+    second: Raptor R Clavicle
+  - first:
+      1: 100064
+    second: Raptor R Eyebrow
+  - first:
+      1: 100066
+    second: Raptor R Finger0
+  - first:
+      1: 100068
+    second: Raptor R Finger01
+  - first:
+      1: 100070
+    second: Raptor R Finger1
+  - first:
+      1: 100072
+    second: Raptor R Finger11
+  - first:
+      1: 100074
+    second: Raptor R Foot
+  - first:
+      1: 100076
+    second: Raptor R Forearm
+  - first:
+      1: 100078
+    second: Raptor R Hand
+  - first:
+      1: 100080
+    second: Raptor R Lower Eyelid
+  - first:
+      1: 100082
+    second: Raptor R Lower Mouth
+  - first:
+      1: 100084
+    second: Raptor R Mouth
+  - first:
+      1: 100086
+    second: Raptor R Thigh
+  - first:
+      1: 100088
+    second: Raptor R Toe0
+  - first:
+      1: 100090
+    second: Raptor R Toe01
+  - first:
+      1: 100092
+    second: Raptor R Upper Eyelid
+  - first:
+      1: 100094
+    second: Raptor R Upper Mouth
+  - first:
+      1: 100096
+    second: Raptor R UpperArm
+  - first:
+      1: 100098
+    second: Raptor Spine
+  - first:
+      1: 100100
+    second: Raptor Spine1
+  - first:
+      1: 100102
+    second: Raptor Tail
+  - first:
+      1: 100104
+    second: Raptor Tail02
+  - first:
+      1: 100106
+    second: Raptor Tail03
+  - first:
+      1: 100108
+    second: Raptor Tail04
+  - first:
+      1: 100110
+    second: Raptor Tail05
+  - first:
+      1: 100112
+    second: Raptor Tongue
+  - first:
+      1: 100114
+    second: Raptor Tongue02
+  - first:
+      1: 100116
+    second: Raptor Tongue03
+  - first:
+      1: 100118
+    second: //RootNode
+  - first:
+      1: 100120
+    second: Dummy001
+  - first:
+      4: 400000
+    second: Eye Left
+  - first:
+      4: 400002
+    second: Eye Right
+  - first:
+      4: 400004
+    second: Eye Shine Left
+  - first:
+      4: 400006
+    second: Eye Shine Right
+  - first:
+      4: 400008
+    second: Eye Squash Left
+  - first:
+      4: 400010
+    second: Eye Squash Right
+  - first:
+      4: 400012
+    second: Raptor
+  - first:
+      4: 400014
+    second: Raptor Head
+  - first:
+      4: 400016
+    second: Raptor Jaw
+  - first:
+      4: 400018
+    second: Raptor L Calf
+  - first:
+      4: 400020
+    second: Raptor L Clavicle
+  - first:
+      4: 400022
+    second: Raptor L Eyebrow
+  - first:
+      4: 400024
+    second: Raptor L Finger0
+  - first:
+      4: 400026
+    second: Raptor L Finger01
+  - first:
+      4: 400028
+    second: Raptor L Finger1
+  - first:
+      4: 400030
+    second: Raptor L Finger11
+  - first:
+      4: 400032
+    second: Raptor L Foot
+  - first:
+      4: 400034
+    second: Raptor L Forearm
+  - first:
+      4: 400036
+    second: Raptor L Hand
+  - first:
+      4: 400038
+    second: Raptor L Lower Eyelid
+  - first:
+      4: 400040
+    second: Raptor L Lower Mouth
+  - first:
+      4: 400042
+    second: Raptor L Mouth
+  - first:
+      4: 400044
+    second: Raptor L Thigh
+  - first:
+      4: 400046
+    second: Raptor L Toe0
+  - first:
+      4: 400048
+    second: Raptor L Toe01
+  - first:
+      4: 400050
+    second: Raptor L Upper Eyelid
+  - first:
+      4: 400052
+    second: Raptor L Upper Mouth
+  - first:
+      4: 400054
+    second: Raptor L UpperArm
+  - first:
+      4: 400056
+    second: Raptor Neck
+  - first:
+      4: 400058
+    second: Raptor Pelvis
+  - first:
+      4: 400060
+    second: Raptor R Calf
+  - first:
+      4: 400062
+    second: Raptor R Clavicle
+  - first:
+      4: 400064
+    second: Raptor R Eyebrow
+  - first:
+      4: 400066
+    second: Raptor R Finger0
+  - first:
+      4: 400068
+    second: Raptor R Finger01
+  - first:
+      4: 400070
+    second: Raptor R Finger1
+  - first:
+      4: 400072
+    second: Raptor R Finger11
+  - first:
+      4: 400074
+    second: Raptor R Foot
+  - first:
+      4: 400076
+    second: Raptor R Forearm
+  - first:
+      4: 400078
+    second: Raptor R Hand
+  - first:
+      4: 400080
+    second: Raptor R Lower Eyelid
+  - first:
+      4: 400082
+    second: Raptor R Lower Mouth
+  - first:
+      4: 400084
+    second: Raptor R Mouth
+  - first:
+      4: 400086
+    second: Raptor R Thigh
+  - first:
+      4: 400088
+    second: Raptor R Toe0
+  - first:
+      4: 400090
+    second: Raptor R Toe01
+  - first:
+      4: 400092
+    second: Raptor R Upper Eyelid
+  - first:
+      4: 400094
+    second: Raptor R Upper Mouth
+  - first:
+      4: 400096
+    second: Raptor R UpperArm
+  - first:
+      4: 400098
+    second: Raptor Spine
+  - first:
+      4: 400100
+    second: Raptor Spine1
+  - first:
+      4: 400102
+    second: Raptor Tail
+  - first:
+      4: 400104
+    second: Raptor Tail02
+  - first:
+      4: 400106
+    second: Raptor Tail03
+  - first:
+      4: 400108
+    second: Raptor Tail04
+  - first:
+      4: 400110
+    second: Raptor Tail05
+  - first:
+      4: 400112
+    second: Raptor Tongue
+  - first:
+      4: 400114
+    second: Raptor Tongue02
+  - first:
+      4: 400116
+    second: Raptor Tongue03
+  - first:
+      4: 400118
+    second: //RootNode
+  - first:
+      4: 400120
+    second: Dummy001
+  - first:
+      23: 2300000
+    second: Eye Left
+  - first:
+      23: 2300002
+    second: Eye Right
+  - first:
+      23: 2300004
+    second: Eye Shine Left
+  - first:
+      23: 2300006
+    second: Eye Shine Right
+  - first:
+      33: 3300000
+    second: Eye Left
+  - first:
+      33: 3300002
+    second: Eye Right
+  - first:
+      33: 3300004
+    second: Eye Shine Left
+  - first:
+      33: 3300006
+    second: Eye Shine Right
+  - first:
+      43: 4300000
+    second: Eye Right
+  - first:
+      43: 4300002
+    second: Eye Shine Right
+  - first:
+      43: 4300004
+    second: Eye Left
+  - first:
+      43: 4300006
+    second: Eye Shine Left
+  - first:
+      74: 7400000
+    second: Velociraptor Run
+  - first:
+      74: 7400002
+    second: Velociraptor Run Turn Right
+  - first:
+      74: 7400004
+    second: Velociraptor Run Turn Left
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -155,7 +429,7 @@ ModelImporter:
       name: 03 - Default
     second: {fileID: 2100000, guid: 1e21bbbe239ccd245acd59aeebfb6bf7, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -164,6 +438,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -172,6 +447,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -183,6 +459,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Velociraptor Run
       takeName: Take 001
+      internalID: 0
       firstFrame: 5
       lastFrame: 25
       wrapMode: 0
@@ -203,7 +480,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.13868615
+        functionName: PlayFootSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7d3f1c022138faa4d8a200b0f4b5e441, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6593674
+        functionName: PlayFootSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 7d3f1c022138faa4d8a200b0f4b5e441, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -264,73 +555,74 @@ ModelImporter:
         weight: 1
       - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left/Eye Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left/Eye Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left/Eye Shine Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left/Eye Shine Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right/Eye Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right/Eye Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right/Eye Shine Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right/Eye Shine Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor L Lower Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor L Lower Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor R Lower Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor R Lower Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue/Raptor Tongue02
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue/Raptor Tongue02
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue/Raptor Tongue02/Raptor Tongue03
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue/Raptor Tongue02/Raptor Tongue03
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Eyebrow
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Eyebrow
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Lower Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Lower Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Upper Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Upper Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Upper Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Upper Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Eyebrow
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Eyebrow
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Lower Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Lower Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Upper Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Upper Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Upper Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Upper Mouth
         weight: 1
       - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor R Clavicle
         weight: 1
@@ -375,6 +667,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Velociraptor Run Turn Right
       takeName: Take 001
+      internalID: 0
       firstFrame: 40
       lastFrame: 60
       wrapMode: 0
@@ -456,73 +749,74 @@ ModelImporter:
         weight: 1
       - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left/Eye Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left/Eye Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left/Eye Shine Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left/Eye Shine Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right/Eye Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right/Eye Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right/Eye Shine Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right/Eye Shine Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor L Lower Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor L Lower Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor R Lower Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor R Lower Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue/Raptor Tongue02
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue/Raptor Tongue02
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue/Raptor Tongue02/Raptor Tongue03
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue/Raptor Tongue02/Raptor Tongue03
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Eyebrow
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Eyebrow
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Lower Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Lower Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Upper Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Upper Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Upper Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Upper Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Eyebrow
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Eyebrow
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Lower Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Lower Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Upper Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Upper Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Upper Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Upper Mouth
         weight: 1
       - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor R Clavicle
         weight: 1
@@ -567,6 +861,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Velociraptor Run Turn Left
       takeName: Take 001
+      internalID: 0
       firstFrame: 90
       lastFrame: 110
       wrapMode: 0
@@ -648,73 +943,74 @@ ModelImporter:
         weight: 1
       - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left/Eye Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left/Eye Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Left/Eye Shine Left
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Left/Eye Shine Left
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right/Eye Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right/Eye Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Eye
-          Squash Right/Eye Shine Right
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Eye Squash Right/Eye Shine Right
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor L Lower Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor L Lower Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor R Lower Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor R Lower Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue/Raptor Tongue02
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue/Raptor Tongue02
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          Jaw/Raptor Tongue/Raptor Tongue02/Raptor Tongue03
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor Jaw/Raptor Tongue/Raptor Tongue02/Raptor Tongue03
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Eyebrow
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Eyebrow
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Lower Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Lower Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Upper Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Upper Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          L Upper Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor L Upper Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Eyebrow
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Eyebrow
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Lower Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Lower Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Mouth
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Upper Eyelid
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Upper Eyelid
         weight: 1
-      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor Head/Raptor
-          R Upper Mouth
+      - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor Neck/Raptor
+          Head/Raptor R Upper Mouth
         weight: 1
       - path: Raptor/Raptor Pelvis/Raptor Spine/Raptor Spine1/Raptor R Clavicle
         weight: 1
@@ -762,21 +1058,33 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -784,10 +1092,13 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: Raptor Pelvis
       humanName: Hips
@@ -1334,15 +1645,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b6d743eaf1589874c9e2046d4b6d8055,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b6d743eaf1589874c9e2046d4b6d8055, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 535646294}
   - component: {fileID: 535646293}
   m_Layer: 5
-  m_Name: RestartTxt
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,7 +478,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Restart Game: NumPad Enter'
+  m_text: 'Jump: Space, W, Up Arrow
+
+    Restart Game: NumPad Enter'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -505,7 +507,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.25
+  m_fontSize: 22.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1191,6 +1193,7 @@ GameObject:
   - component: {fileID: 1117897733}
   - component: {fileID: 1117897732}
   - component: {fileID: 1117897731}
+  - component: {fileID: 1117897734}
   m_Layer: 0
   m_Name: Dino
   m_TagString: Untagged
@@ -1293,6 +1296,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1117897734
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117897727}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b6d743eaf1589874c9e2046d4b6d8055, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4766ee607d222f14383893aac2212ae3, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1439481821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7666705346945933658, guid: d1d6341e4259b5f4ea3a781c35e97cc3, type: 3}
@@ -1663,6 +1686,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b6d743eaf1589874c9e2046d4b6d8055, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b6d743eaf1589874c9e2046d4b6d8055, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: b6d743eaf1589874c9e2046d4b6d8055, type: 3}
