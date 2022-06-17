@@ -7,11 +7,20 @@ public class ChunkSpawner : MonoBehaviour
     [SerializeField] float spawnDelay = 1f;
     [SerializeField] Transform spawnLocation;
 
+    bool spawnStarted = false;
+
     public static GameObject lastChunkSpawned { get; private set; }
 
     private void Start()
     {
         lastChunkSpawned = ObjectPool.SharedInstance.pooledPrefabs[0];
+    }
+
+    private void Update()
+    {
+        if (spawnStarted || GameManager.Instance.gamePaused) return;
+
+        spawnStarted = true;
         StartCoroutine(SpawnChunkOnDelay());
     }
 

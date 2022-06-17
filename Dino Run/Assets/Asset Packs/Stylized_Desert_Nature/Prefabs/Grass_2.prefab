@@ -93,7 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4594042532038372}
   - component: {fileID: 205849648746002254}
-  - component: {fileID: 65309159067833944}
   m_Layer: 0
   m_Name: Grass_2
   m_TagString: Untagged
@@ -146,19 +145,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23116652854240538}
   m_Enabled: 1
---- !u!65 &65309159067833944
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291021399749654}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.58, y: 0.59, z: 2.21}
-  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!1 &1744153651291448
 GameObject:
   m_ObjectHideFlags: 0

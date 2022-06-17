@@ -19,13 +19,12 @@ public class ObjectPool : MonoBehaviour
 
     private void Start()
     {
-        //pooledPrefabs = new List<GameObject>();
-        GameObject tmp;
-
+        // Populates object pool
         foreach (var chunk in prefabsToPool)
         {
             for (int i = 0; i < copiesOfPrefabs; i++)
             {
+                GameObject tmp;
                 tmp = Instantiate(chunk);
                 tmp.transform.parent = transform;
                 tmp.SetActive(false);

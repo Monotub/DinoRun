@@ -356,10 +356,13 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Input System/PlayerInputActions.cs"
+"Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/Chunk.cs"
 "Assets/Scripts/ChunkSpawner.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/ObjectPool.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/UIManager.cs"
 -langversion:9.0
 
 /deterministic
