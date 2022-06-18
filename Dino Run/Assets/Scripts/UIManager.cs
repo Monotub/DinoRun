@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Canvas restartScreen;
     [SerializeField] TMP_Text tempInstructions;
     [SerializeField] TMP_Text scoreText;
+    [SerializeField] TMP_Text highScoreText;
 
     [Header("Animators")]
     [SerializeField] Animator startAnim;
@@ -36,8 +37,14 @@ public class UIManager : MonoBehaviour
         tempInstructions.color = new Color(1, 1, 1, 0.3f);
     }
 
-    public void UpdateScore(int value)
+    public void ShowRestartUI()
     {
-        scoreText.text = $"Score: {value}";
+        restartScreen.enabled = true;
+    }
+
+    public void UpdateScore(int score, int highscore)
+    {
+        scoreText.text = $"Score: {score.ToString("n0")}";
+        highScoreText.text = highscore.ToString("n0");
     }
 }

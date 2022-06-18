@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
     [SerializeField] float jumpHeight = 2f;
     [SerializeField] float gravity = -15f;
     [SerializeField] bool canDie = true;
+
+    public bool IsDead => isDead;
 
     PlayerInputActions controls;
     CharacterController controller;
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour
     bool isDead = false;
 
 
+
     private void Awake()
     {
         controls = new PlayerInputActions();
@@ -31,14 +34,14 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         controls.Dino.Jump.performed += ctx => HandleJump(ctx);
-        controls.Dino.Restart.performed += ctx => RestartScene();
+        controls.Dino.Restart.performed += ctx => GameManager.Instance.ResetHighscore();
         controls.Dino.Enable();
     }
 
     private void OnDisable()
     {
         controls.Dino.Jump.performed -= ctx => HandleJump(ctx);
-        controls.Dino.Restart.performed -= ctx => RestartScene();
+        controls.Dino.Restart.performed -= ctx => GameManager.Instance.ResetHighscore();
         controls.Dino.Disable();
     }
 
@@ -53,10 +56,8 @@ public class Player : MonoBehaviour
             anim.SetTrigger("StartRunning");
             ProcessJumpAnimation();
 
-
             if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Die"))
             {
-                
                 Debug.Log("Done with death animation!");
             }
         }
@@ -74,6 +75,7 @@ public class Player : MonoBehaviour
 
     void HandleJump(InputAction.CallbackContext ctx)
     {
+        if (isDead) return;
         if (GameManager.Instance.gamePaused) GameManager.Instance.StartGame();
 
         if (controller.isGrounded)
@@ -97,20 +99,21 @@ public class Player : MonoBehaviour
         if (!canDie || isDead) return;
 
         if(other.tag == "Hazard")
-        {
-            GameManager.Instance.PauseGame();
-            FindObjectOfType<ChunkSpawner>().StopSpawning();
-            ObjectPool.SharedInstance.SetAllChunkSpeed(0);
-            anim.SetTrigger("Die");
-            Debug.LogWarning("DOOM!");
-            isDead = true;
-        }
+            HandleDeath();
     }
 
-    private void RestartScene()
+    private void HandleDeath()
     {
-        SceneManager.LoadScene(0);
+        isDead = true;
+        anim.SetTrigger("Die");
+
+        GameManager.Instance.PauseGame();
+        FindObjectOfType<ChunkSpawner>().StopSpawning();
+        ObjectPool.SharedInstance.SetAllChunkSpeed(0);
+        UIManager.Instance.ShowRestartUI();
     }
+
+
 
     /// <summary>
     /// Used in running animation event

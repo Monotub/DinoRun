@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] Player dino;
     public bool gamePaused {get; private set;}
     public static GameManager Instance;
 
@@ -17,24 +19,47 @@ public class GameManager : MonoBehaviour
             Instance = this;
 
         gamePaused = true;
+        LoadScores();
+    }
+
+    private void Start()
+    {
     }
 
     private void Update()
     {
-        if (gamePaused) return;
+        UIManager.Instance.UpdateScore(score, highscore);
+        
+        if (gamePaused || dino.IsDead) return;
         
         timer += Time.deltaTime;
         score = Mathf.RoundToInt(timer * 10);
-        UIManager.Instance.UpdateScore(score);
 
-        if (score > highscore) highscore = score;
-        
+        if (score > highscore)
+            highscore = score;
+
+    }
+
+    void LoadScores()
+    {
+        if (PlayerPrefs.HasKey("HighScore"))
+            highscore = PlayerPrefs.GetInt("HighScore");
+        else 
+            highscore = 0;
+    }
+
+    void SaveScores()
+    {
+        PlayerPrefs.SetInt("HighScore", highscore);
+        PlayerPrefs.Save();
     }
 
     public void StartGame()
     {
         gamePaused = false;
         UIManager.Instance.StartGame();
+        dino.GetComponent<Animator>().Play("Run");
+
     }
 
     public void PauseGame()
@@ -42,5 +67,21 @@ public class GameManager : MonoBehaviour
         gamePaused = true;
     }
 
+    public void RestartScene()
+    {
+        SaveScores();
+        SceneManager.LoadScene(0);
+    }
 
+    private void OnApplicationQuit()
+    {
+        SaveScores();
+    }
+
+    public void ResetHighscore()
+    {
+        highscore = 0;
+        PlayerPrefs.SetInt("HighScore", 0);
+        PlayerPrefs.Save();
+    }
 }
