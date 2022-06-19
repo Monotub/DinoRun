@@ -482,14 +482,14 @@ ModelImporter:
       curves: []
       events:
       - time: 0.13868615
-        functionName: PlayFootSound
+        functionName: ProcessFootstep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 7d3f1c022138faa4d8a200b0f4b5e441, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.6593674
-        functionName: PlayFootSound
+        functionName: ProcessFootstep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 7d3f1c022138faa4d8a200b0f4b5e441, type: 3}
         floatParameter: 0

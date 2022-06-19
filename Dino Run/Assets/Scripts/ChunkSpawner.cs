@@ -6,15 +6,13 @@ public class ChunkSpawner : MonoBehaviour
 {
     [SerializeField] float spawnDelay = 1f;
     [SerializeField] Transform spawnLocation;
+    
+    public static GameObject lastChunkSpawned { get; private set; }
 
     bool spawnStarted = false;
 
-    public static GameObject lastChunkSpawned { get; private set; }
 
-    private void Start()
-    {
-        lastChunkSpawned = ObjectPool.SharedInstance.pooledPrefabs[0];
-    }
+    private void Start() => lastChunkSpawned = ObjectPool.Instance.pooledPrefabs[0];
 
     private void Update()
     {
@@ -28,17 +26,15 @@ public class ChunkSpawner : MonoBehaviour
     {
         while (true)
         {
-            GameObject chunk = ObjectPool.SharedInstance.GetPooledChunk();
+            GameObject chunk = ObjectPool.Instance.GetPooledChunk();
             if (chunk)
             {
                 chunk.transform.position = spawnLocation.position;
                 chunk.transform.rotation = Quaternion.identity;
                 chunk.transform.parent = transform;
                 lastChunkSpawned = chunk;
-                //Debug.Log($"Last Chunk Spawned: {lastChunkSpawned.name}, {lastChunkSpawned.GetComponent<Chunk>().HasHazard}");
                 chunk.SetActive(true);
             }
-
             yield return new WaitForSeconds(spawnDelay);
         }
     }
@@ -46,5 +42,12 @@ public class ChunkSpawner : MonoBehaviour
     public void StopSpawning()
     {
         StopAllCoroutines();
+    }
+
+    public void ChangeSpawnSpeed(float value)
+    {
+        StopAllCoroutines();
+        spawnDelay -= value;
+        StartCoroutine(SpawnChunkOnDelay());
     }
 }

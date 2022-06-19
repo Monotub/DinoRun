@@ -6,15 +6,16 @@ public class ObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject[] prefabsToPool;
     [SerializeField] int copiesOfPrefabs = 3;
-    public static ObjectPool SharedInstance { get; private set; }
+    public static ObjectPool Instance { get; private set; }
     public List<GameObject> pooledPrefabs = new List<GameObject>();
+    public int chunksSinceLastHazard { get; private set; }
+    public int chunkSpeed = 5;
 
     Chunk lastChunk;
-    //float defaultChunkSpd = 5f;       // Use this if setup to not reload scene 
 
     private void Awake()
     {
-        SharedInstance = this;
+        Instance = this;
     }
 
     private void Start()
@@ -36,41 +37,62 @@ public class ObjectPool : MonoBehaviour
     public GameObject GetPooledChunk()
     {
         lastChunk = ChunkSpawner.lastChunkSpawned.GetComponent<Chunk>();
-        
         int rand = Random.Range(0, pooledPrefabs.Count);
 
-        if (pooledPrefabs[rand] && !pooledPrefabs[rand].activeInHierarchy)
-        {
-            if(lastChunk.HasHazard && pooledPrefabs[rand].GetComponent<Chunk>().HasHazard)
-            {
-                // Need to change this. Recursion is bad.
-                for (int i = 0; i < pooledPrefabs.Count; i++)
-                {
-                    if (!pooledPrefabs[i].GetComponent<Chunk>().HasHazard && !pooledPrefabs[i].activeInHierarchy)
-                    {
-                        return pooledPrefabs[i];
-                    }
-                }
-            }
-            else
-                return pooledPrefabs[rand];
-        }
-        else
+        // Returns Hazard chunk if there's too much dead space
+        if(chunksSinceLastHazard >= 2)
         {
             foreach (var chunk in pooledPrefabs)
             {
-                if (!chunk.activeInHierarchy)
+                if (chunk.GetComponent<Chunk>().HasHazard && !chunk.activeInHierarchy)
+                {
+                    chunksSinceLastHazard = 0;
                     return chunk;
+                }
             }
         }
+
+        if (pooledPrefabs[rand] && !pooledPrefabs[rand].activeInHierarchy)
+        {
+            MonitorHazards(rand);
+            return pooledPrefabs[rand];
+            // Ensures 2 hazards don't spawn next to each other
+            //if(lastChunk.HasHazard && pooledPrefabs[rand].GetComponent<Chunk>().HasHazard)
+            //{
+            //    for (int i = 0; i < pooledPrefabs.Count; i++)
+            //    {
+            //        if (!pooledPrefabs[i].GetComponent<Chunk>().HasHazard && !pooledPrefabs[i].activeInHierarchy)
+            //        {
+            //            MonitorHazards(i);
+            //            return pooledPrefabs[i];
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    MonitorHazards(rand);
+            //    return pooledPrefabs[rand];
+            //}
+        }
+        else
+        {
+            // Ensures there are no empty spots
+            for (int i = 0; i < pooledPrefabs.Count; i++)
+            {
+                if (!pooledPrefabs[i].activeInHierarchy)
+                {
+                    MonitorHazards(i);
+                    return pooledPrefabs[i];
+                }
+            }
+        }
+        
         return null;
     }
 
-    public void SetAllChunkSpeed(float value)
+    private void MonitorHazards(int i)
     {
-        for (int i = 0; i < pooledPrefabs.Count; i++)
-        {
-            pooledPrefabs[i].GetComponent<Chunk>().speed = value;
-        }
+        if (!pooledPrefabs[i].GetComponent<Chunk>().HasHazard) chunksSinceLastHazard++;
+        else chunksSinceLastHazard = 0;
     }
 }

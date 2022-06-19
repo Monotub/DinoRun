@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,24 +7,29 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Player dino;
+
     public bool gamePaused {get; private set;}
     public static GameManager Instance;
 
     int score = 0;
     int highscore;
-    float timer = 0;
+    float scoreTimer = 0;
+    int numOfGameManagers;
 
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
 
+        numOfGameManagers = FindObjectsOfType<GameManager>().Length;
+
+        if (numOfGameManagers > 1)
+            Destroy(gameObject);
+        else
+            DontDestroyOnLoad(gameObject);
+
         gamePaused = true;
         LoadScores();
-    }
-
-    private void Start()
-    {
     }
 
     private void Update()
@@ -32,12 +38,11 @@ public class GameManager : MonoBehaviour
         
         if (gamePaused || dino.IsDead) return;
         
-        timer += Time.deltaTime;
-        score = Mathf.RoundToInt(timer * 10);
+        scoreTimer += Time.deltaTime;
+        score = Mathf.RoundToInt(scoreTimer * 10);
 
         if (score > highscore)
             highscore = score;
-
     }
 
     void LoadScores()
@@ -56,10 +61,12 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        if (dino == null) dino = FindObjectOfType<Player>();
+
         gamePaused = false;
+        score = 0;
         UIManager.Instance.StartGame();
         dino.GetComponent<Animator>().Play("Run");
-
     }
 
     public void PauseGame()
@@ -67,10 +74,17 @@ public class GameManager : MonoBehaviour
         gamePaused = true;
     }
 
+    /// <summary>
+    /// Referenced by UI Restart button
+    /// </summary>
     public void RestartScene()
     {
-        SaveScores();
+        score = 0;
+        scoreTimer = 0;
+        GameManager.Instance.SaveScores();
         SceneManager.LoadScene(0);
+        UIManager.Instance.RestartGame();
+        UIManager.Instance.UpdateScore(score, highscore);
     }
 
     private void OnApplicationQuit()

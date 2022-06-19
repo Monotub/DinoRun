@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpHeight = 2f;
     [SerializeField] float gravity = -15f;
     [SerializeField] bool canDie = true;
+    [SerializeField] ParticleSystem footstepVFX;
 
     public bool IsDead => isDead;
 
@@ -21,6 +23,9 @@ public class Player : MonoBehaviour
     float jumpValue;
     bool isDead = false;
 
+    public static event Action PlayFootstepSFX;
+    public static event Action PlayDeathSounds;
+    public static event Action OnDinoRoar;
 
 
     private void Awake()
@@ -80,6 +85,7 @@ public class Player : MonoBehaviour
 
         if (controller.isGrounded)
         {
+            AudioManager.Instance.PlayDinoJump();
             anim.SetTrigger("Jump");
             velocity.y = jumpHeight;
             controller.Move(velocity * Time.deltaTime);
@@ -109,7 +115,7 @@ public class Player : MonoBehaviour
 
         GameManager.Instance.PauseGame();
         FindObjectOfType<ChunkSpawner>().StopSpawning();
-        ObjectPool.SharedInstance.SetAllChunkSpeed(0);
+        ObjectPool.Instance.chunkSpeed = 0;
         UIManager.Instance.ShowRestartUI();
     }
 
@@ -118,10 +124,21 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Used in running animation event
     /// </summary>
-    private void PlayFootSound()
+    private void ProcessFootstep()
     {
-        //Debug.Log("Stomp");
-        // TODO: Send event to audio manager for foot sounds
-        // added to test to see if this worked for downloaded model/animations
+        footstepVFX.Play();
+        PlayFootstepSFX?.Invoke();
     }
+
+    private void PlayDinoRoar()
+    {
+        OnDinoRoar?.Invoke();
+    }
+
+    private void PlayBodyThud()
+    {
+        footstepVFX.Play();
+        PlayDeathSounds?.Invoke();
+    }
+
 }
